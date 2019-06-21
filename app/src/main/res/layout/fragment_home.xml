@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/li"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment_home"
+    android:layout_gravity="center"
+    android:background="@drawable/">
+</FrameLayout>-->
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/i"
+        android:background="@drawable/sail"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/i">
+
+    </ViewFlipper>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:id="@+id/t1"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Hello, Welcome To Āmāra Durgapur" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="19dp"
+        android:layout_margin="10dp"
+        android:id="@+id/t2"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="Āmāra Durgapur is one of the application for providing quality information related to the places like parks, plants. restaurants and  shopping complexes in durgapur." />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "949795122894",
+    "firebase_url": "https://durgapurtourism-2df44.firebaseio.com",
+    "project_id": "durgapurtourism-2df44",
+    "storage_bucket": "durgapurtourism-2df44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949795122894:android:8d43a2fdc4d44ec4",
+        "android_client_info": {
+          "package_name": "com.nnk.DurgapurTourism"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949795122894-oockfdfbv7dsjeaavos13rhhl2ttb6qa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nnk.DurgapurTourism",
+            "certificate_hash": "92230f19cdd19cfd36d0383f4d3e276c96a0c9d3"
+          }
+        },
+        {
+          "client_id": "949795122894-n3sadof3f7ftgs5tgao7b3h9i7eccp57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqfv6Nx2d-HgR9zAKmVLY3P6eKgCZBUjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949795122894-n3sadof3f7ftgs5tgao7b3h9i7eccp57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="8dp"
+        android:background="@color/colorPrimary"
+
+        android:layout_margin="5dp"
+        android:id="@+id/c1"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Name"
+        android:fontFamily="casual"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textSize="19dp"
+        android:textColor="@color/colorSecondary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="Review"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textReview"/>
+    <TextView
+        android:text="Rating"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRating"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="author"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:textColor="@color/colorTernary"
+        android:layout_height="wrap_content"
+        android:id="@+id/textName"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

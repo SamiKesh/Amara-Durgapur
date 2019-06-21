@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MaintwoActivity"
+
+    tools:showIn="@layout/app_bar_maintwo">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f1">
+        </FrameLayout>
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/i1"
+        android:background="@drawable/dd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Hello, Welcome To Durgapur Tourism" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Durgapur Tourism is one of the website for providing quality information related to the places ,restarants,shopping complexes in durgapur." />
+-->
+</RelativeLayout>
+

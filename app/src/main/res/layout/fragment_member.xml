@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/li"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_member"
+    android:background="@drawable/dd2">-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:textColor="#5766bc"
+        android:layout_margin="12dp"
+        android:id="@+id/t1"
+        android:background="@drawable/dgp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_height="410dp"
+        android:text="DURGAPUR          West Bengal" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="10dp"
+            app:cardElevation="8dp"
+            android:id="@+id/c1"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/t2"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Durgapur is a metropolitan city and a municipal corporation in Paschim Bardhaman district in the state of West Bengal, India. Durgapur is the 3rd largest urban agglomeration after Kolkata and Asansol in West Bengal and happens to be the 2nd planned city in India after Chandigarh. Durgapur was planned by two American Architects- Joseph Allen Stein and Benjamin Polk in 1955. It is the only city in Eastern India to have an operational dry dock">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read more...."
+        android:textSize="17dp"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorSecondary"
+        android:id="@+id/t3"
+        />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
