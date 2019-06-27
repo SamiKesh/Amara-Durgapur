@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button b1;
     ImageView imageView;
     SignInButton button;
-    TextView t1;
+    TextView t1,t2,t3;
     FirebaseAuth firebaseAuth;
     private  final static int RC_SIGN_IN=2;
     GoogleSignInClient mGoogleSignInClient;
@@ -56,6 +57,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         b1=findViewById(R.id.b1);
         t1=findViewById(R.id.t1);
+        t2=findViewById(R.id.t2);
+        t3=findViewById(R.id.t3);
+
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v,"The application only uses the google account details and do not misuse it..",Snackbar.LENGTH_LONG)
+                        .setAction("Action",null).show();
+
+            }
+        });
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v,"All right reserved ®. Made with Love in India",Snackbar.LENGTH_LONG)
+                        .setAction("Action",null).show();
+
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v,"Mail Us at sameeksha.keshari77@gmail.com",Snackbar.LENGTH_LONG)
+                        .setAction("Action",null).show();
+            }
+        });
+
         button=findViewById(R.id.b3);
         imageView=findViewById(R.id.i1);
         firebaseAuth = FirebaseAuth.getInstance();

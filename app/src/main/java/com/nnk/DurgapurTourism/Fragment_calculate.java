@@ -1,13 +1,16 @@
 package com.nnk.DurgapurTourism;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +21,7 @@ public class Fragment_calculate extends Fragment {
     }
     TextView t1,t4,t6,t7,t8,t9,t12,t13,t14,t16,t17,t18,t19,t20,t21,t22,t24,t25,t27,t28,t29,t3,t11;
     CardView c1,c2,c3,c4,c5,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24;
+    Button b1,b2,b3,b4;
 
 
     @Override
@@ -49,6 +53,10 @@ public class Fragment_calculate extends Fragment {
         c23=(CardView) v.findViewById(R.id.c23);
         c24=(CardView) v.findViewById(R.id.c24);
 
+        b1=(Button) v.findViewById(R.id.b1);
+        b2=(Button) v.findViewById(R.id.b2);
+        b3=(Button) v.findViewById(R.id.b3);
+        b4=(Button) v.findViewById(R.id.b4);
 
 
         t1=(TextView) v.findViewById(R.id.t1);
@@ -353,10 +361,56 @@ public class Fragment_calculate extends Fragment {
 
             }
         });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),PaymentActivity.class);
+                intent.putExtra("r1","Swapnil Pandey");
+                intent.putExtra("r2","iswapnil.pnd@okaxis");
+                intent.putExtra("r3",10);
+                startActivity(intent);
+
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),PaymentActivity.class);
+                intent.putExtra("r1","Swapnil Pandey");
+                intent.putExtra("r2","iswapnil.pnd@okaxis");
+                intent.putExtra("r3",20);
+                startActivity(intent);
+
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("com.barbeque");
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Snackbar.make(v, "No appropriate Application", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            }
+        });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),PaymentActivity.class);
+                intent.putExtra("r1","Swapnil Pandey");
+                intent.putExtra("r2","iswapnil.pnd@okaxis");
+                intent.putExtra("r3",20);
+                startActivity(intent);
+
+            }
+        });
 
 
 
         return v;
     }
+
 
 }
